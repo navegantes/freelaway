@@ -11,7 +11,7 @@
   <!-- <img src="./public/pystack_week.png" alt="Freelaway" width=200 /> -->
 </div>
 
-<p>
+<p align="center">
   <img alt="Principal linguagem do projeto" src="https://img.shields.io/github/languages/top/navegantes/freelaway?color=56BEB8" />
 
   <img alt="Quantidade de linguagens utilizadas" src="https://img.shields.io/github/languages/count/navegantes/freelaway?color=56BEB8" />
