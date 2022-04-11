@@ -45,7 +45,7 @@
   <a href="https://github.com/navegantes" target="_blank">Autor</a>
 </p>
 
-<p>
+<p align="center">
   <img alt="Login" src="public/login.png" width=250>
   <img alt="cadastrar" src="public/cadastrar.png" width=250>
   <img alt="Recuprerar senha" src="public/recuperar_senha.png" width=250>
@@ -93,20 +93,20 @@ $ cd freelaway
 
 ```bash
 # Criar
-	# Linux
-		$ python3 -m venv venv
-	# Windows
-		$ python -m venv venv
+  # Linux
+    $ python3 -m venv venv
+  # Windows
+    $ python -m venv venv
 
 #Ativar
-	# Linux
-		source venv/bin/activate
-	# Windows
-		venv/Scripts/Activate
+  # Linux
+    $ source venv/bin/activate
+  # Windows
+    $ venv/Scripts/Activate
 
 # Caso algum comando retorne um erro de permissão execute o código e tente novamente:
 
-	Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+  $ Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
 ```
 
 3 - Instale as dependências
