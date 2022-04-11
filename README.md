@@ -94,9 +94,9 @@ $ cd freelaway
 ```bash
 # Criar
 	# Linux
-		python3 -m venv venv
+		$ python3 -m venv venv
 	# Windows
-		python -m venv venv
+		$ python -m venv venv
 
 #Ativar
 	# Linux
@@ -113,12 +113,44 @@ $ cd freelaway
 
 ```bash
 # Instale as dependências
+# Linux
+$ pip3 install -r requirements.txt
+# Windows
 $ pip install -r requirements.txt
+```
 
+4 - Faça as migrações.
+
+```bash
+# Linux
+python3 manage.py migrate
+# Windows
+python manage.py migrate
+```
+
+5 - Crie um super usuário
+
+```bash
+$ python3 .\manage.py createsuperuser
+$ python .\manage.py createsuperuser
+```
+
+6 - Inicie a aplicação
+
+```bash
 # Para iniciar o projeto
+# Linux
+$ python3 manage.py runserver
+# Windows
 $ python manage.py runserver
 
-# O app vai inicializar em <http://localhost:3000>
+# O app vai inicializar em <http://127.0.0.1:8000/>
+
+# Para iniciar o projeto em uma porta especifica
+$ python manage.py runserver <porta>
+
+# O app vai inicializar em <http://127.0.0.1:<porta>/>
+
 ```
 
 ## 📝 Licença
