@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
-import django_on_heroku
+import django_heroku
 from django.contrib.messages import constants
 import os
 from pathlib import Path
@@ -151,4 +151,4 @@ MESSAGE_TAGS = {
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # Configure Django App for Heroku.
-django_on_heroku.settings(locals())
+django_heroku.settings(locals())
