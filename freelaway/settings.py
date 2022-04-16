@@ -10,14 +10,11 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
+import django_on_heroku
 from django.contrib.messages import constants
 import os
 from pathlib import Path
 from decouple import config
-
-# Configure Django App for Heroku.
-import django_on_heroku
-django_on_heroku.settings(locals())
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -33,7 +30,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ['https://freelaway-psw3.herokuapp.com/']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -152,3 +149,6 @@ MESSAGE_TAGS = {
 # Email
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# Configure Django App for Heroku.
+django_on_heroku.settings(locals())
